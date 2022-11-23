@@ -160,7 +160,8 @@ header{
 
 #section-slide{
 
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 2rem 0 4rem 0;
   background-color: #b3e7f5;
 }
 
@@ -186,7 +187,7 @@ header{
   padding:  1rem 2.5rem;
 }
 .slide-text a img{
-  width: 1rem;
+  width: 0.6rem;
 }
 .slide-text a:hover{
   color: black;
@@ -213,7 +214,7 @@ header{
 }
 
 .slide-img img{
-  width: 75vh;
+  width: 31rem;
   margin-left: auto;
 }
 .slide-container{
@@ -231,4 +232,58 @@ header{
   background-color: white;
   color: gray;
   border: none;
+}
+
+/*------------------------------------------*/
+.offre-categorie{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "zone1 zone1 zone1";
+}
+#section-offres h1{
+  margin: 0rem 0 0 0;
+}
+.offre-categorie-zone1{
+  grid-area: zone1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.offre1{
+  background: #63afc7;
+}
+.offre2{
+  background: #fbe3e1;
+}
+.offre3{
+  background: #fe914e;
+}
+.offre4{
+  background: #ffe8b2;
+}
+.offre5{
+  background: #a9ddf3;
+}
+.offre-page1{
+  position: relative;
+  z-index: 2;
+}
+.offre-page2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.offre{
+  padding: 10rem 0;
+  text-align: center;
+}
+.offre h1{
+  color: white;
+}
+.offre p{
+  font-weight: bold;
+  color: #000;
 }
