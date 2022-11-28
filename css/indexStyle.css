@@ -380,7 +380,7 @@ header{
 
 /* -----------------section des Produit------------------ */
 #section-product{
-
+  padding: 5rem 0;
 }
 .section-header{
   display: grid;
@@ -388,6 +388,7 @@ header{
   align-items: center;
 }
 .section-header h1{
+  color: #000;
   grid-column: 2;
   text-align: center;
 }
@@ -449,4 +450,86 @@ header{
   color: gray;
   text-decoration: line-through;
   margin-right: 0.5rem;
+}
+
+/* -----------------section blog------------------ */
+.section-header-blog{
+  width: fit-content;
+}
+.section-header-blog h3{
+  color: #000;
+}
+.space-bar-blog{
+  width: 72%;
+  height: 0.4rem;
+  box-shadow: 0 1px 1px 0 black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section-header-blog div:first-child{
+  background-color: #000;
+}
+#section-blog{
+  background: #f9f9f9;
+  padding: 4rem 0;
+}
+#section-blog main{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 4rem;
+}
+.news-author{
+
+}
+.news-author img{
+  width: 8rem;
+  border-radius: 50%;
+}
+.blog-news{
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  gap: 1.5rem;
+  border-bottom: 1px gray solid;
+}.blog-news:first-child{
+  padding-top: 0;
+}
+.blog-news:last-child{
+  border: 0;
+  padding-bottom: 0;
+}
+.news-text h5{
+  font-size: larger;
+  color: #000;
+  margin: 1rem 0;
+}
+.news-text p:first-child{
+  font-size: smaller;
+  /* font-weight: bold; */
+  font-style: italic;
+  color: gray;
+}
+.blog-archive{
+  position: relative;
+  bottom: 25%;
+}
+
+.blog-archive div{
+  height: 125%;
+  background: url(../img/imgr9.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+  padding-right: 2rem;
+}
+.blog-archive div h1{
+  color: white;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+.blog-archive div p{
+  color: black;
 }
