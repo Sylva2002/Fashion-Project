@@ -593,6 +593,10 @@ header{
 /*--------------------------------- footer ------------------------*/
 footer{
   background: #f9f9f9;
+  padding: 4rem;
+}
+.footer-search{
+  padding: 4rem 0;
 }
 .newsletter-container{
   display: grid;
@@ -630,4 +634,53 @@ footer{
   margin: 0;
   border-radius: 0;
   border: 1px #000 solid;
+}
+
+.our-link main{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+  border-top: 1px gray solid;
+  border-bottom: 1px gray solid;
+}
+.title{
+  font-size: smaller;
+  color: #000;
+}
+.phone{
+  font-weight: 500;
+  color: #000;
+  text-decoration: underline;
+}
+.our-link ul{
+  font-size: small;
+  list-style: disclosure-closed;
+}
+.our-link li{
+  padding: 0 0.8rem ;
+  margin-bottom: 0.5rem;
+}
+.our-link div{
+  border-right: 1px gray solid;
+  padding: 1rem 2rem;
+}
+.our-link div:last-of-type{
+  border: none;
+}
+.contact ul{
+list-style: none;
+}
+.contact span{
+  color: gray;
+}
+.store span{
+  color: #000;
+}
+
+.copyright{
+  font-size: small;
+  text-align: center;
+  padding-top: 2rem ;
+}
+.copyright p span{
+  color: #000;
 }
